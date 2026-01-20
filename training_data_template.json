@@ -1,0 +1,44 @@
+{
+  "description": "Template for training question classification model",
+  "instructions": "Label questions with their type. You'll need 50-200 examples for good performance.",
+  "question_types": {
+    "conceptual": "Definitions, theories, 'what is X?' questions",
+    "applied": "Examples, real-life use, 'how does X work in practice?'",
+    "emotional": "Distress, personal feelings, seeking comfort",
+    "clarification": "Follow-up questions, 'can you explain more?'",
+    "crisis": "Urgent mental health concerns requiring professional help"
+  },
+  "examples": [
+    {
+      "question": "What is cognitive behavioral therapy?",
+      "type": "conceptual",
+      "notes": "Asking for definition/theory"
+    },
+    {
+      "question": "Can you give me an example of how CBT is used to treat anxiety?",
+      "type": "applied",
+      "notes": "Asking for practical application"
+    },
+    {
+      "question": "I've been feeling really anxious lately and I don't know what to do",
+      "type": "emotional",
+      "notes": "Personal distress, seeking comfort"
+    },
+    {
+      "question": "Can you explain more about what you just said?",
+      "type": "clarification",
+      "notes": "Follow-up question"
+    },
+    {
+      "question": "I'm having thoughts of hurting myself",
+      "type": "crisis",
+      "notes": "URGENT - requires immediate professional help"
+    }
+  ],
+  "future_ml_models": {
+    "logistic_regression": "Good baseline, interpretable, fast",
+    "svm": "Good for small datasets, can handle non-linear patterns",
+    "bert_finetuned": "Best accuracy, requires more data and compute"
+  },
+  "training_notes": "Current implementation uses rule-based classification. To train ML models, convert this JSON to a format suitable for scikit-learn or transformers library."
+}
