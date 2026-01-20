@@ -144,6 +144,7 @@ The bot automatically classifies questions into different types and structures r
 - **ML Model Training**: Currently working on training an ML model for question classification to replace the rule-based system. Collecting training data and preparing for model integration (Logistic Regression, SVM, or fine-tuned BERT).
 - **Expanding Resources**: Continuously adding more psychology textbooks and resources to the `data/` folder to expand the knowledge base.
 - **Frontend Development**: Planning to develop a web-based frontend interface for easier access and improved user experience.
+- **Weaviate Integration**: Planning to integrate Weaviate vector database for more efficient and scalable embedding storage and retrieval, replacing the current pickle-based caching system.
 
 ## Requirements
 
